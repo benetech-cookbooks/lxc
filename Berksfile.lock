@@ -1,0 +1,13 @@
+DEPENDENCIES
+  lxc
+    path: .
+    metadata: true
+
+GRAPH
+  dpkg_autostart (0.1.12)
+  iptables-ng (2.2.5)
+  lxc (2.0.3)
+    dpkg_autostart (>= 0.1.10)
+    iptables-ng (>= 0.0.0)
+    polipo (>= 0.0.0)
+  polipo (0.1.0)
